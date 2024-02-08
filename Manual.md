@@ -62,7 +62,6 @@ packages for XBPS, the `Void Linux` native packaging system.
 		* [kernel-hooks](#triggers_kernel_hooks)
 		* [mimedb](#triggers_mimedb)
 		* [mkdirs](#triggers_mkdirs)
-		* [openjdk-profile](#triggers_openjdk_profile)
 		* [pango-modules](#triggers_pango_module)
 		* [pycompile](#triggers_pycompile)
 		* [register-shell](#triggers_register_shell)
@@ -335,6 +334,29 @@ The following functions are defined by `xbps-src` and can be used on any templat
 	and with the appropriate filename for `shell`. If `command` isn't specified,
 	it will default to `pkgname`. The `shell` argument can be one of `bash`,
 	`fish` or `zsh`.
+
+- *vextract()* `[-C <target directory>] [--no-strip-components|--strip-components=<n>] <file>`
+
+	Extracts `file` to `target directory` with `n` directory components stripped. If
+	`target directory` not specified, defaults to the working directory. If
+	`--strip-components` or `--no-strip-components` is not specified, defaults to
+	`--strip-components=1`.
+
+- *vsrcextract()* `[-C <target directory>] [--no-strip-components|--strip-components=<n>] <file>`
+
+	Extracts `$XBPS_SRCDISTDIR/$pkgname-$version/<file>` to `target directory`
+	with `n` directory components stripped. If `target directory` not specified,
+	defaults to the working directory. If `--strip-components` or `--no-strip-components`
+	is not specified, defaults to `--strip-components=1`.
+
+	This is useful when used in conjunction with `skip_extraction` and for submodule distfiles.
+
+- *vsrccopy()* `<file>... <target>`
+
+	Copies `file`s from `$XBPS_SRCDISTDIR/$pkgname-$version/` into the `target` directory,
+	creating `target` if it does not exist.
+
+	This is useful when used in conjunction with `skip_extraction`.
 
 > Shell wildcards must be properly quoted, Example: `vmove "usr/lib/*.a"`.
 
@@ -2015,13 +2037,6 @@ During removal it will delete the directory using `rmdir`.
 
 To include this trigger use the `make_dirs` variable, as the trigger won't do anything
 unless it is defined.
-
-<a id="triggers_openjdk_profile"></a>
-#### openjdk-profile
-
-The openjdk-profile trigger is responsible for creating an entry in /etc/profile.d that
-sets the `JAVA_HOME` environment variable to the currently-selected alternative for
-`/usr/bin/java` on installation. This trigger must be manually requested.
 
 <a id="triggers_pango_module"></a>
 #### pango-modules

@@ -1,7 +1,7 @@
 # Template file for 'python3-phonenumbers'
 pkgname=python3-phonenumbers
-version=8.13.20
-revision=2
+version=8.13.27
+revision=1
 build_style=python3-module
 hostmakedepends="python3-setuptools"
 depends="python3"
@@ -11,4 +11,4 @@ license="Apache-2.0"
 homepage="https://github.com/daviddrysdale/python-phonenumbers"
 changelog="https://raw.githubusercontent.com/daviddrysdale/python-phonenumbers/dev/python/HISTORY.md"
 distfiles="${PYPI_SITE}/p/phonenumbers/phonenumbers-${version}.tar.gz"
-checksum=bf2b35a806d37979e5361109429da46d9a047e59d9af98639d733c834e7dab22
+checksum=983bda7a3a8b2fad31806db109d4d36b2758ed16d0ab7ad5e737541a67d4637e
