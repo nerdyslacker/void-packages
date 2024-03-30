@@ -1,6 +1,6 @@
 # Template file for 'cortile'
 pkgname=cortile
-version=2.3.3
+version=2.4.0
 revision=1
 nopie=yes
 short_desc="Linux auto tiling manager with hot corner support for Openbox, Fluxbox, IceWM, Xfwm, KWin, Marco, Muffin, Mutter and other EWMH compliant window managers using the X11 window system."
@@ -8,7 +8,7 @@ maintainer="nerdyslacker <karyan40024@gmail.com>"
 license="MIT"
 homepage="https://github.com/leukipp/cortile"
 distfiles="https://github.com/leukipp/cortile/releases/download/v${version}/${pkgname}_${version}_linux_amd64.tar.gz"
-checksum=fb051398a246d2feebc00fa9c2a6e1f244ef134bcb6254510afdf89fef72be49
+checksum=1a9c87737e6d212a15921ac5e10f21b64c7aa2051dbadc976f3c817674418537
 
 do_install() {
   vmkdir /usr/lib
