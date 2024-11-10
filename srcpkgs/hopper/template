@@ -1,6 +1,6 @@
 # Template file for 'hopper'
 pkgname=hopper
-version=5.15.3
+version=5.17.2
 revision=1
 _build=1
 create_wrksrc=yes
@@ -9,7 +9,7 @@ maintainer="Andrea Brancaleoni <abc@pompel.me>"
 license="custom:EULA"
 homepage="https://www.hopperapp.com"
 distfiles="https://d2ap6ypl1xbe4k.cloudfront.net/Hopper-v4-${version}-Linux-demo.pkg.tar.xz"
-checksum=d70940dc0fa1de60a6bc265fb97c8e307ae35606a95f85ebab209df761b043bb
+checksum=daa69bd961f04c7eb21538afe4ddfec0122f8e76c16dc94580165019b8825944
 
 archs="x86_64"
 restricted=yes

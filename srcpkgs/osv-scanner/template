@@ -1,15 +1,16 @@
 # Template file for 'osv-scanner'
 pkgname=osv-scanner
-version=1.7.2
+version=1.8.5
 revision=1
 build_style=go
 go_import_path="github.com/google/osv-scanner"
 go_package="${go_import_path}/cmd/osv-scanner"
 go_ldflags="-X main.version=${version}"
+make_check_args="-skip=_LocalDatabases"
 short_desc="Vulnerability scanner which uses the data provided by https://osv.dev"
 maintainer="icp <pangolin@vivaldi.net>"
 license="Apache-2.0"
 homepage="https://google.github.io/osv-scanner/"
 changelog="https://raw.githubusercontent.com/google/osv-scanner/main/CHANGELOG.md"
 distfiles="https://github.com/google/osv-scanner/archive/refs/tags/v${version}.tar.gz"
-checksum=b6ff65f82e833e2d8102e3308e620ef30af5f93b3a215f899098be9a3e21ad03
+checksum=27e95d475b26ee195aeea240799b091fd2654faca5336537950fb245f320df85

@@ -1,7 +1,7 @@
 # Template file for 'typst'
 pkgname=typst
 reverts="23.03.28_1"
-version=0.11.0
+version=0.12.0
 revision=1
 build_style=cargo
 configure_args="--no-default-features --features=embed-fonts"
@@ -14,7 +14,7 @@ license="Apache-2.0"
 homepage="https://typst.app"
 changelog="https://typst.app/docs/changelog/"
 distfiles="https://github.com/typst/typst/archive/refs/tags/v${version}.tar.gz"
-checksum=fd8debe21d5d22d4cd6c823494537f1356c9954cc2fe6c5db8c76c1b126112dd
+checksum=5e92463965c0cf6aa003a3bacd1c68591ef2dc0db59dcdccb8f7b084836a1266
 
 export TYPST_VERSION="$version"
 export GEN_ARTIFACTS="./generated"
