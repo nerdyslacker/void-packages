@@ -1,18 +1,16 @@
 # Template file for 'borgmatic'
 pkgname=borgmatic
-version=1.8.10
+version=1.8.14
 revision=1
 build_style=python3-pep517
-# requires unpackaged python module apprise
-make_check_args="--ignore=tests/unit/hooks/test_apprise.py"
 hostmakedepends="python3-setuptools python3-wheel"
 depends="borg python3-setuptools python3-ruamel.yaml python3-jsonschema
  python3-colorama python3-requests"
-checkdepends="${depends} python3-pytest-cov python3-flexmock"
+checkdepends="${depends} python3-pytest-cov python3-flexmock python3-apprise"
 short_desc="Wrapper script for the Borg backup software"
 maintainer="Joel Beckmeyer <joel@beckmeyer.us>"
 license="GPL-3.0-or-later"
 homepage="https://torsion.org/borgmatic/"
 changelog="https://projects.torsion.org/borgmatic-collective/borgmatic/raw/branch/master/NEWS"
 distfiles="${PYPI_SITE}/b/borgmatic/borgmatic-${version}.tar.gz"
-checksum=851daae3d8020fd059b24fa343dd047ca924abb997f6a00efa046cbdd9ee0de7
+checksum=598b3bc22c19d53bd375e5295afec56d111759f74671845aacfe055c539fa746

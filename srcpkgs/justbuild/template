@@ -1,6 +1,6 @@
 # Template file for 'justbuild'
 pkgname=justbuild
-version=1.2.5
+version=1.4.0
 revision=1
 create_wrksrc=yes
 hostmakedepends="jo pandoc pkg-config python3 tar unzip wget grpc protobuf"
@@ -13,7 +13,7 @@ license="Apache-2.0"
 homepage="https://github.com/just-buildsystem/justbuild/"
 changelog="https://github.com/just-buildsystem/justbuild/blob/master/CHANGELOG.md"
 distfiles="https://github.com/just-buildsystem/justbuild/archive/v${version}.tar.gz"
-checksum=9f0c336fc333b64e77622b2956b4c9733f998e2b0db575827f492da87703efbe
+checksum=62e8f12c9da5d2eb30f81b3c19ba060af3d045e1a6aeafd0ef2661dd7f5280e7
 conflicts="just>=0"
 nocross="not supported by bootstrapping"
 
