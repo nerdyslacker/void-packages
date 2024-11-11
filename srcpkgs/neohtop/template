@@ -1,7 +1,7 @@
 # Template file for 'neohtop'
 # Repackages the official rpm package.
 pkgname=neohtop
-version=1.0.9
+version=1.1.0
 revision=1
 archs="x86_64"
 create_wrksrc=yes
@@ -10,9 +10,9 @@ short_desc="htop on steroids"
 maintainer="nerdyslacker <karyan40024@gmail.com>"
 license="MIT License"
 homepage="https://abdenasser.github.io/neohtop/"
-changelog="https://github.com/Abdenasser/neohtop/compare/v1.0.8...v1.0.9"
+changelog="https://github.com/Abdenasser/neohtop/compare/v1.0.9...v1.1.0"
 distfiles="https://github.com/Abdenasser/neohtop/releases/download/v${version}/NeoHtop_${version}_x86_64.rpm"
-checksum=3d034b8527acd55ab512e472aa184c31f560bebf920e7bba371c3609c83b0768 
+checksum=4341786a47ef0d7e2bacd1ae280f4d037c754d56be853a9b7eee9b99f5d33ef4 
 
 do_install() {
 	# Copy files
