@@ -1,19 +1,19 @@
 # Template file for 'eza'
 pkgname=eza
-version=0.20.7
+version=0.20.11
 revision=1
 build_style=cargo
 hostmakedepends="pkg-config"
 makedepends="libgit2-1.8-devel"
-short_desc="Modern, maintained replacement for ls"
+short_desc="Modern replacement for ls"
 maintainer="tranzystorekk <tranzystorek.io@protonmail.com>"
 license="EUPL-1.2"
 homepage="https://eza.rocks"
 changelog="https://raw.githubusercontent.com/eza-community/eza/main/CHANGELOG.md"
 distfiles="https://github.com/eza-community/eza/archive/refs/tags/v${version}.tar.gz
  https://github.com/eza-community/eza/releases/download/v${version}/man-${version}.tar.gz"
-checksum="981af52e7a0d5ab374ed2a58b0bb9542acc81235ff479bb1f08d61941f65b18b
- 87c80605caf343805d7c20b8cf4624d3391a13c48238e204da4fcd7b51b7c771"
+checksum="1a3ec9fb87c61e2369b46945ff1fafb7cbb5e6cb4693bb59003f4b628a93a04c
+ 325f28fb858618632a7a4737e08d2f03f645d2674133fe7b347fea873621de80"
 
 skip_extraction="man-${version}.tar.gz"
 
